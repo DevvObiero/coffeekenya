@@ -1,101 +1,121 @@
-/* *{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --main-color:#deab5f;
+  --primary-color:#312e2e;
+}
+button {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
 }
 
-.container{
-    background:rgb(34,34,34); 
-    padding: 20px;
-    height: 100vh;
-    display: grid;
-    grid-template-columns:1fr minmax(200px,1fr) 1fr;
-    grid-template-rows: repeat(3,1fr);
-    grid-gap:10px;
-    justify-content: flex-end;
-   
-    
+/* resets */
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
 }
 
-.s{
-    padding: 20px;
-    background-color:rgb(84,84,84) ;
-    text-align: center;
-    color: beige;
+body{
+  background: #100e0f;
 }
 
-header{
- height: 10px;
- align-self: center;
-
-}
-main{
-    height: 10px;
-    align-self: center;
-   
-   }
- */
- * {
-    margin: 0;
-  }
-  
-  .container {
-    background: rgb(34, 34, 34);
-    padding: 20px;
-    height: 100vh;
-  }
-
-.container>div {
-  width:300px ;
-  height: 300px;
-  background: teal;
-  animation-name: Obiero;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: antiquewhite;
+  font-family:Roboto,helvetica;
 }
 
-@keyframes Obiero{
-  0%{
-    transform: scale(2);
-  }
-  25%{
-    transform: rotate(360deg);
-    background-color: blanchedalmond;
-    transform: scew(10deg);
-  }
-  50%{
-    background-color: turquoise;
-    transform: rotate(180deg);
-    border-radius: 50%;
-  }
+.logo{
+  font-family: lobster,sans;
 }
+
+li{
+  display: inline;
+  list-style: none;
+}
+li a{
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+li a:hover{
+  border-bottom:3px solid var(--main-color);
+
+}
+/* i'm done with the nav bar */
+/* header styles */
+.header{
+  background: url('https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-nao-triponez-129207.jpg?raw=true');
+  background-size: cover; /* This will ensure that the image covers the whole page */
+  background-position: center; /* This centers the background image */
+  height: 100vh;
+  font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   
-  header {
-    height: 10px;
-    align-self: center;
-  }
-main{
-    height: 10px;
-    align-self: center;
-  }
+}
+
+.main-btn{
+  position: absolute;
+  height: 50px;
+  color:black;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  font-family:Arial, Helvetica, sans-serif ;
+  margin-top: 20px;
+  background: transparent;
+  background:var(--main-color) ;
+  transform: translateY(60px);
+  bottom: 4rem;
+}
+
+.main-btn:hover{
+  background-color: bisque;
   
-  /* Media Query for Small Screens */
-  @media only screen and (max-width: 110px) {
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-    }
+ 
+}
+
+.main-headings{
+   position:absolute;
+   top:7rem;
+   font-size: 4rem;
+   word-spacing: 10px;
   
-    .s {
-      margin-bottom: 10px;
-    }
-  }
-  
-  /* Media Query for Larger Screens */
-  @media only screen and (min-width: 1200px) {
-    .container {
-      grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
-      grid-template-rows: repeat(3, 1fr);
-    }
-  }
-  
+}
+.main-headings:hover{
+  color: #deab5f;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.primary-headings{
+  position: absolute;
+  bottom: 9rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+.primary-headings:hover{
+  color: #deab5f;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.and-headings{
+  bottom: 9.5rem;
+  position: absolute;
+}
