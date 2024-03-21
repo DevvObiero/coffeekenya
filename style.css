@@ -1,0 +1,101 @@
+/* *{
+    margin: 0;
+}
+
+.container{
+    background:rgb(34,34,34); 
+    padding: 20px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr minmax(200px,1fr) 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:10px;
+    justify-content: flex-end;
+   
+    
+}
+
+.s{
+    padding: 20px;
+    background-color:rgb(84,84,84) ;
+    text-align: center;
+    color: beige;
+}
+
+header{
+ height: 10px;
+ align-self: center;
+
+}
+main{
+    height: 10px;
+    align-self: center;
+   
+   }
+ */
+ * {
+    margin: 0;
+  }
+  
+  .container {
+    background: rgb(34, 34, 34);
+    padding: 20px;
+    height: 100vh;
+  }
+
+.container>div {
+  width:300px ;
+  height: 300px;
+  background: teal;
+  animation-name: Obiero;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes Obiero{
+  0%{
+    transform: scale(2);
+  }
+  25%{
+    transform: rotate(360deg);
+    background-color: blanchedalmond;
+    transform: scew(10deg);
+  }
+  50%{
+    background-color: turquoise;
+    transform: rotate(180deg);
+    border-radius: 50%;
+  }
+}
+  
+  header {
+    height: 10px;
+    align-self: center;
+  }
+main{
+    height: 10px;
+    align-self: center;
+  }
+  
+  /* Media Query for Small Screens */
+  @media only screen and (max-width: 110px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+  
+    .s {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media Query for Larger Screens */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  
