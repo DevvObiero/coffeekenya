@@ -191,7 +191,7 @@ li a:hover{
   transform: translateX(-120px);
 }
 .section-content p{
-  max-width: 380px;
+  max-width: 400px;
   color:bisque;
   font-family: "Playfair Display",sans-serif;
   line-height: 20px;
