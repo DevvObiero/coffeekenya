@@ -7,12 +7,12 @@
   --primary-color:#312e2e;
 }
 button {
-  padding: 8px 20px;
+  padding: 10px 30px;
+  background: var(--main-color);
   border: none;
   cursor: pointer;
-  align-items: center;
   /* test */
-  height: 50px;
+  /* height: 50px;
   color:black;
   transition-property: all;
   transition-duration: 1s;
@@ -23,6 +23,7 @@ button {
   background:var(--main-color) ;
   transform: translateY(60px);
   bottom: 4rem;
+} */
 }
 
 /* resets */
@@ -93,6 +94,15 @@ li a:hover{
   background:var(--main-color) ;
   transform: translateY(60px);
   bottom: 4rem;
+  /* position: absolute;
+  bottom: 2rem;
+  padding: 10px 30px;
+  margin-top: 20px;
+  background: transparent;
+  background: var(--main-color);
+  border: none;
+  cursor: pointer;
+  transform: translateY(60px); */
 }
 
 .main-btn:hover{
@@ -135,13 +145,19 @@ li a:hover{
 }
 #our-story{
   /* height:100vh; */
-  margin-top:15%;
+  /* margin-top:15%;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around ;
   align-items: center;
   font-family:"Playfair Display",sans-serif; 
-  color: antiquewhite;
+  color: antiquewhite; */
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 90px;
 
 }
 
@@ -151,6 +167,7 @@ li a:hover{
   background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true") ;
   background-size: cover;
   background-position: center;
+  font-family:"Playfair Display",sans-serif; 
 
 }
 
@@ -158,15 +175,24 @@ li a:hover{
   display: flex;
   align-items: center;
 }
-  .title{
-    font-family:"Playfair Display",sans-serif;
-    font-size:4rem;
-   transform: translateX(-100px);
+
+.title{
+  font-family: "Playfair Display SC", serif;
+  font-size: 4rem;
+  color: bisque;
+  transform: translateX(-100px);
  }
 
  .line{
-width:100px ;
-height: 2px;
-background: white;
-transform: translateX(-120PX);
+  width: 90px;
+  height: 2px;
+  background: #fff;
+  transform: translateX(-120px);
+}
+.section-content p{
+  max-width: 300px;
+  color:bisque;
+  font-family: "Playfair Display",sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
 }
