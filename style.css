@@ -144,6 +144,12 @@ li a:hover{
   bottom: 9.5rem;
   position: absolute;
 }
+
+
+/* our story start  */
+
+
+
 #our-story{
   /* height:100vh; */
   /* margin-top:15%;
@@ -159,7 +165,7 @@ li a:hover{
   justify-content: space-around;
   align-items: center;
   /* margin-left: 90px; */
-
+  color: #fff;
 }
 
 .img{
@@ -180,7 +186,7 @@ li a:hover{
 .title{
   font-family: "Playfair Display SC", serif;
   font-size: 4rem;
-  color: bisque;
+  color: #fff;
   transform: translateX(-100px);
  }
 
@@ -197,3 +203,11 @@ li a:hover{
   line-height: 20px;
   margin: 20px 0;
 }
+
+
+/* our story end */
+
+p{
+  color: beige;
+}
+
