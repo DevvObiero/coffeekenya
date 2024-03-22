@@ -206,6 +206,8 @@ li a:hover{
 
 
 /* our story end */
+
+/* cofee start */
 .coffee-container{
   display: flex;
   justify-content: space-around;
@@ -214,9 +216,7 @@ li a:hover{
   margin-top: 10rem;
 
 }
-.content-section p{
-max-width: 500px;
-}
+
 
 .img-2{
   width: 400px;
@@ -228,3 +228,37 @@ max-width: 500px;
   color: white;
   font-family: " Playfair Display",serif;
 }
+
+.content-section p{
+  max-width: 500px;
+  margin-top: 20px;
+  font-family:"Playfair Display",sans-serif;
+  color: bisque;
+  }
+
+  .learn-2{
+    margin-top: 15px;
+  }
+
+   /* cofee start end */
+   .products{
+    margin-top: 5rem;
+
+   }
+   .title-3{
+     font-size: 4rem;
+     color: white;
+     font-family: " Playfair Display",serif;
+     margin-left: 10rem;
+     margin-left: 10rem;
+     margin-bottom: 10rem;
+    margin-top: 10rem;
+    }
+
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
