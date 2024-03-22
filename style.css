@@ -44,7 +44,9 @@ nav{
   justify-content: space-around;
   align-items: center;
   color: antiquewhite;
-  font-family:Roboto,helvetica;
+  font-family:"Playfair Display",helvetica;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* position: fixed; */
  
 }
 
@@ -123,8 +125,8 @@ li a:hover{
 .main-headings:hover{
   color: #deab5f;
   transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
 .primary-headings{
   position: absolute;
@@ -136,8 +138,8 @@ li a:hover{
 .primary-headings:hover{
   color: #deab5f;
   transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
 
 .and-headings{
@@ -246,6 +248,7 @@ li a:hover{
 
    }
    .title-3{
+    display: flex;
      font-size: 4rem;
      color: white;
      font-family: " Playfair Display",serif;
@@ -253,6 +256,7 @@ li a:hover{
      margin-left: 10rem;
      margin-bottom: 10rem;
     margin-top: 10rem;
+    justify-content:center;
     }
 
     .cards{
@@ -281,8 +285,130 @@ li a:hover{
         height: 100px;
         position:absolute;
         top:-60px;
-        border: 2px solid bisque;
+        
         margin-left: 70px;
 
       }
-      
+.img-one{
+  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/1.png?raw=true") ;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.img-two{
+  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/2.png?raw=true") ;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.img-three{
+  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/3.png?raw=true") ;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.card-title{
+  color: #fff;
+  font-family: "Playfair Display";
+  margin-top: 50px;
+}
+.card .items p{
+   color:wheat;
+   margin: 20px 0;
+   font-family: "Playfair Display";
+}
+
+ /* products end*/
+
+ footer{
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family:"Playfair Display"sans-serif;
+ }
+
+ footer .container{
+  margin: 20px;
+  max-width: 250px;
+  text-align: center;
+ }
+
+ footer .heading-info{
+  margin-bottom: 20px;
+  
+  
+ }
+
+ footer p{
+  line-height: 25px;
+  color: bisque;
+ }
+ .para{
+color: aliceblue;
+text-align: center;
+margin-top:20px ;
+ }
+
+ span{
+  color: var(--main-color);
+ }
+
+ hr{
+  margin-bottom: 20px;
+  border: #deab5f;
+  
+ }
+
+ /* PROJECT END */
+ /* presponsive */
+ @media screen and (max-width: 768px) {
+  .main-headings, 
+  .primary-headings{  
+     font-size:2.1rem;
+    
+    
+    
+    }
+ 
+    #our-story{
+      text-align: center;
+    }
+  
+  #our-story .title {
+    transform:translateX(30px) ;
+  }
+#our-story .line{
+  display: none;
+}
+.content-section{
+  text-align: center;
+}
+#our-story .img-container .img{
+
+  width: 70%;
+  text-align: center;
+  margin:0 auto ;
+}
+.coffee-container .img-container{
+  margin-top: 5rem;
+  width: 50%;
+}
+.title-two{
+  margin: 0 auto;
+}
+.title{
+  margin: 0 auto;
+}
+.title-3{
+  margin: 20px;
+  font-size: 28px;
+  margin-inline-start: auto;
+}
+
+} 
