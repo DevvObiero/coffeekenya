@@ -262,3 +262,27 @@ li a:hover{
       justify-content: space-around;
       align-items: center;
     }
+
+    .card{
+      border: 2px solid bisque;
+      padding: 0 20px;
+      height: 400px;
+      width: 300px;
+      display: flex;
+      flex-direction:column ;
+      border-radius: 5px;
+      justify-content: space-around;
+      position: relative;
+      margin-bottom: 4rem;
+        }
+
+      .card-img{
+        width: 100px;
+        height: 100px;
+        position:absolute;
+        top:-60px;
+        border: 2px solid bisque;
+        margin-left: 70px;
+
+      }
+      
