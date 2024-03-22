@@ -206,8 +206,25 @@ li a:hover{
 
 
 /* our story end */
+.coffee-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap ;
+  align-items: center;
+  margin-top: 10rem;
 
-p{
-  color: beige;
+}
+.content-section p{
+max-width: 500px;
 }
 
+.img-2{
+  width: 400px;
+  height: 400px;
+}
+
+.title-two{
+  font-size: 3rem;
+  color: white;
+  font-family: " Playfair Display",serif;
+}
