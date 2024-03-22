@@ -11,6 +11,18 @@ button {
   border: none;
   cursor: pointer;
   align-items: center;
+  /* test */
+  height: 50px;
+  color:black;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  font-family:Arial, Helvetica, sans-serif ;
+  margin-top: 20px;
+  background: transparent;
+  background:var(--main-color) ;
+  transform: translateY(60px);
+  bottom: 4rem;
 }
 
 /* resets */
@@ -31,6 +43,7 @@ nav{
   align-items: center;
   color: antiquewhite;
   font-family:Roboto,helvetica;
+ 
 }
 
 .logo{
@@ -93,6 +106,7 @@ li a:hover{
    top:7rem;
    font-size: 4rem;
    word-spacing: 10px;
+
   
 }
 .main-headings:hover{
@@ -118,4 +132,41 @@ li a:hover{
 .and-headings{
   bottom: 9.5rem;
   position: absolute;
+}
+#our-story{
+  /* height:100vh; */
+  margin-top:15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  align-items: center;
+  font-family:"Playfair Display",sans-serif; 
+  color: antiquewhite;
+
+}
+
+.img{
+  width:400px ;
+  height: 400px;
+  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true") ;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.title-style{
+  display: flex;
+  align-items: center;
+}
+  .title{
+    font-family:"Playfair Display",sans-serif;
+    font-size:4rem;
+   transform: translateX(-100px);
+ }
+
+ .line{
+width:100px ;
+height: 2px;
+background: white;
+transform: translateX(-120PX);
 }
