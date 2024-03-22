@@ -11,6 +11,7 @@ button {
   background: var(--main-color);
   border: none;
   cursor: pointer;
+  bottom: 4rem;
   /* test */
   /* height: 50px;
   color:black;
@@ -157,17 +158,17 @@ li a:hover{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 
 }
 
 .img{
   width:400px ;
-  height: 400px;
+  height:400px;
   background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true") ;
   background-size: cover;
   background-position: center;
-  font-family:"Playfair Display",sans-serif; 
+  /* font-family:"Playfair Display",sans-serif;  */
 
 }
 
