@@ -1,1 +1,1 @@
-https://cofeeewebsitee.netlify.app
+https://cafecofeee.netlify.app
