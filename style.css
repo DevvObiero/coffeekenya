@@ -119,6 +119,7 @@ li a:hover{
    top:7rem;
    font-size: 4rem;
    word-spacing: 10px;
+   margin-top: 100px;
 
   
 }
@@ -412,3 +413,49 @@ margin-top:20px ;
 }
 
 } 
+
+@media  (min-width:320px)  {
+  .header{
+    background: url('https://images.unsplash.com/photo-1572373696785-e8bd92718f65?q=80&w=1300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* max-width: 110vh; */
+    /* height: auto; Maintain aspect ratio */
+    background-size:cover; /* This will ensure that the image covers the whole page */
+     /* background-position: center; This centers the background image */
+    height: 200vh;
+    width: 200vh;
+    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   max-width: 100%;
+    
+  }
+  .main-headings{
+    position:absolute;
+    top:7rem;
+    font-size: 2rem;
+    word-spacing: 10px;
+text-align: center;
+  }
+  .primary-headings{
+    position: absolute;
+    bottom: 8rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+   
+  }
+  .and-headings{
+    bottom: 10.5rem;
+    position: absolute;
+  }
+ .cards{
+  font-size: small;
+ }
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
