@@ -1,103 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap')
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
 :root {
-  --main-color:#deab5f;
-  --primary-color:#312e2e;
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
 }
+
+/* Utility Styles */
 button {
   padding: 10px 30px;
   background: var(--main-color);
   border: none;
   cursor: pointer;
-  bottom: 4rem;
-  /* test */
-  /* height: 50px;
-  color:black;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-  font-family:Arial, Helvetica, sans-serif ;
-  margin-top: 20px;
-  background: transparent;
-  background:var(--main-color) ;
-  transform: translateY(60px);
-  bottom: 4rem;
-} */
 }
 
-/* resets */
-
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #100e0f;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: antiquewhite;
-  font-family:"Playfair Display",helvetica;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* position: fixed; */
- 
+  color: #fff;
+  font-family: sans-serif;
+  padding-top: 15px;
 }
 
-.logo{
-  font-family: lobster,sans;
-}
-
-li{
+li {
   display: inline;
   list-style: none;
 }
-li a{
-  color: aliceblue;
+
+li a {
+  color: #fff;
   text-decoration: none;
   margin-left: 40px;
 }
 
-li a:hover{
-  border-bottom:3px solid var(--main-color);
-
+li a:hover {
+  border-bottom: 2px solid #deab5f;
 }
-/* i'm done with the nav bar */
-/* header styles */
-.header{
-  background: url('https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-nao-triponez-129207.jpg?raw=true');
-  background-size: cover; /* This will ensure that the image covers the whole page */
-  background-position: center; /* This centers the background image */
+
+.header {
+  background: url("https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
   height: 100vh;
-  font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial;
+  font-family: "Playfair Display SC", serif;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  
+  color: #fff;
+  position: relative;
+  text-align: center;
+  animation-iteration-count: var(--main-color);
+  animation-duration: 2s;
+  animation-timing-function: 1;
 }
+.main-headings:hover{
 
-.main-btn{
-  position: absolute;
-  height: 50px;
-  color:black;
+  color:rgb(184, 109, 11);
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: ease-out;
-  font-family:Arial, Helvetica, sans-serif ;
-  margin-top: 20px;
-  background: transparent;
-  background:var(--main-color) ;
-  transform: translateY(60px);
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+.primary-headings:hover{
+  position: absolute;
+  color:#deab5f;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.main-headings {
+  position: absolute;
+  top: 7rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+  position: sticky;
+}
+
+
+
+.primary-heading {
+  position: absolute;
   bottom: 4rem;
-  /* position: absolute;
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+.main-btn {
+  position: absolute;
   bottom: 2rem;
   padding: 10px 30px;
   margin-top: 20px;
@@ -105,402 +111,243 @@ li a:hover{
   background: var(--main-color);
   border: none;
   cursor: pointer;
-  transform: translateY(60px); */
+  transform: translateY(60px);
 }
 
-.main-btn:hover{
-  background-color: bisque;
-  
- 
-}
-
-.main-headings{
-   position:absolute;
-   top:7rem;
-   font-size: 4rem;
-   word-spacing: 10px;
-   margin-top: 100px;
-
-  
-}
-.main-headings:hover{
-  color: #deab5f;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-}
-.primary-headings{
-  position: absolute;
-  bottom: 9rem;
-  word-spacing: 10px;
-  margin-bottom: -40px;
-}
-
-.primary-headings:hover{
-  color: #deab5f;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-}
-
-.and-headings{
-  bottom: 9.5rem;
-  position: absolute;
-}
-
-
-/* our story start  */
-
-
-
-#our-story{
-  /* height:100vh; */
-  /* margin-top:15%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around ;
-  align-items: center;
-  font-family:"Playfair Display",sans-serif; 
-  color: antiquewhite; */
+#our-story {
   margin-top: 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /* margin-left: 90px; */
-  color: #fff;
 }
 
-.img{
-  width:400px ;
-  height:400px;
-  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true") ;
-  background-size: cover;
+.img {
+  width: 400px;
+  height: 400px;
+  background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true");
   background-position: center;
-  /* font-family:"Playfair Display",sans-serif;  */
-
+  background-size: cover;
 }
 
-.title-style{
+.title-style {
   display: flex;
   align-items: center;
 }
 
-.title{
+.title {
   font-family: "Playfair Display SC", serif;
   font-size: 4rem;
   color: #fff;
   transform: translateX(-100px);
- }
+}
 
- .line{
-  width: 90px;
+.line {
+  width: 100px;
   height: 2px;
   background: #fff;
   transform: translateX(-120px);
 }
-.section-content p{
-  max-width: 400px;
-  color:bisque;
-  font-family: "Playfair Display",sans-serif;
+
+.section-content p {
+  max-width: 500px;
+  color: #fff;
+  font-family: sans-serif;
   line-height: 20px;
   margin: 20px 0;
 }
 
-
-/* our story end */
-
-/* cofee start */
-.coffee-container{
+.coffee-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap:wrap ;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 10rem;
-
 }
 
+.content-section p {
+  max-width: 500px;
+}
 
-.img-2{
+.img-container {
+  width: 500px;
+  height: 400px;
+}
+
+.img-2 {
   width: 400px;
   height: 400px;
 }
 
-.title-two{
+.title-two {
   font-size: 3rem;
-  color: white;
-  font-family: " Playfair Display",serif;
-}
-
-.content-section p{
-  max-width: 500px;
-  margin-top: 20px;
-  font-family:"Playfair Display",sans-serif;
-  color: bisque;
-  }
-
-  .learn-2{
-    margin-top: 15px;
-  }
-
-   /* cofee start end */
-   .products{
-    margin-top: 5rem;
-
-   }
-   .title-3{
-    display: flex;
-     font-size: 4rem;
-     color: white;
-     font-family: " Playfair Display",serif;
-     margin-left: 10rem;
-     margin-left: 10rem;
-     margin-bottom: 10rem;
-    margin-top: 10rem;
-    justify-content:center;
-    }
-
-    .cards{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .card{
-      border: 2px solid bisque;
-      padding: 0 20px;
-      height: 400px;
-      width: 300px;
-      display: flex;
-      flex-direction:column ;
-      border-radius: 5px;
-      justify-content: space-around;
-      position: relative;
-      margin-bottom: 4rem;
-        }
-
-      .card-img{
-        width: 100px;
-        height: 100px;
-        position:absolute;
-        top:-60px;
-        
-        margin-left: 70px;
-
-      }
-.img-one{
-  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/1.png?raw=true") ;
-  background-size: cover;
-  background-position: center;
-
-}
-
-.img-two{
-  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/2.png?raw=true") ;
-  background-size: cover;
-  background-position: center;
-
-}
-
-.img-three{
-  background:url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/3.png?raw=true") ;
-  background-size: cover;
-  background-position: center;
-
-}
-
-.card-title{
   color: #fff;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display SC", serif;
+  font-weight: normal;
+}
+
+.content-section p {
+  color: white;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.products {
+  margin-top: 5rem;
+}
+
+.title-three {
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid #deab5f;
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one {
+  background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/1.png?raw=true");
+  background-position: center;
+  background-size: cover;
+}
+.img-two {
+  background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/2.png?raw=true");
+  background-position: center;
+  background-size: cover;
+}
+.img-three {
+  background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/3.png?raw=true");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: #fff;
+  font-family: sans-serif;
   margin-top: 50px;
 }
-.card .items p{
-   color:wheat;
-   margin: 20px 0;
-   font-family: "Playfair Display";
+
+.card .items p {
+  color: #fff;
+  margin: 20px 0;
+  font-family: sans-serif;
 }
 
- /* products end*/
-
- footer{
+/* footer */
+footer {
   height: 50vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family:"Playfair Display"sans-serif;
- }
+  font-family: sans-serif;
+}
 
- footer .container{
+footer .container {
   margin: 20px;
-  max-width: 250px;
+  max-width: 300px;
   text-align: center;
- }
+}
 
- footer .heading-info{
+footer .heading-info {
   margin-bottom: 20px;
-  
-  
- }
+}
 
- footer p{
+footer p {
   line-height: 25px;
-  color: bisque;
- }
- .para{
-color: aliceblue;
-text-align: center;
-margin-top:20px ;
- }
+}
 
- span{
-  color: var(--main-color);
- }
+span {
+  color: #deab5f;
+}
 
- hr{
+hr {
   margin-bottom: 20px;
-  border: #deab5f;
-  
- }
+  border-color: #deab5f;
+  width: 500px;
+  margin: 0 auto;
+}
 
- /* PROJECT END */
- /* presponsive */
- @media screen and (max-width: 768px) {
-  .main-headings, 
-  .primary-headings{  
-     font-size:2.1rem;
-    
-    
-    
-    }
- 
-    #our-story{
-      text-align: center;
-    }
-  
-  #our-story .title {
-    transform:translateX(30px) ;
+.para {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-headings,
+  .primary-heading {
+    font-size: 2.5rem;
   }
-#our-story .line{
-  display: none;
-}
-.content-section{
-  text-align: center;
-}
-#our-story .img-container .img{
 
-  width: 70%;
-  text-align: center;
-  margin:0 auto ;
-}
-.coffee-container .img-container{
-  margin-top: 5rem;
-  width: 50%;
-}
-.title-two{
-  margin: 0 auto;
-}
-.title{
-  margin: 0 auto;
-}
-.title-3{
-  margin: 20px;
-  font-size: 28px;
-  margin-inline-start: auto;
-}
-
-} 
-
-@media  (min-width:320px)  {
-  .header{
-    background: url('https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    /* max-width: 110vh; */
-    /* height: auto; Maintain aspect ratio */
-    background-size:cover; /* This will ensure that the image covers the whole page */
-     /* background-position: center; This centers the background image */
-    height: 100vh;
-    width: 13300vh;
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-   max-width: 100%;
-
-  
-   }
-   .main-headings, 
-  .primary-headings{  
-     font-size:2.1rem;
-    
-    
-    
-    }
- 
-    #our-story{
-      text-align: center;
-      font-size: 1.0rem;
-    }
-  
-  #our-story .title {
-    transform:translateX(30px) ;
-    font-size: 2.8rem;
-    display: flex;
+  #our-story {
     text-align: center;
   }
-#our-story .line{
-  display: none;
-}
-.content-section{
-  text-align: center;
-}
-#our-story .img-container .img{
 
-  width: 70%;
-  text-align: center;
-  margin:0 auto ;
-}
-.coffee-container .img-container{
-  margin-top: 5rem;
-  width: 50%;
-}
-.title-two{
-  margin: 0 auto;
-}
-.title{
-  margin: 0 auto;
-}
-.title-3{
-  margin: 20px;
-  font-size: 28px;
-  margin-inline-start: auto;
-}
+  #our-story .title {
+    transform: translateX(50px);
+  }
 
-  .main-headings{
-    position:absolute;
-    top:7rem;
-    font-size: 2rem;
-    word-spacing: 10px;
-text-align: center;
+  #our-story .line {
+    display: none;
   }
-  .primary-headings{
-    position: absolute;
-    bottom: 8rem;
-    word-spacing: 10px;
-    margin-bottom: -40px;
-   
+
+  .content-section {
+    text-align: center;
   }
-  .and-headings{
-    bottom: 10.5rem;
-    position: absolute;
+
+  #our-story .img-container .img {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
   }
- .cards{
-  font-size: small;
- }
+
+  .coffee-container .img-container {
+    margin-top: 5rem;
+    width: 50%;
+  }
+
+  hr {
+    width: 400px;
+  }
+
+  .hr-two {
+    display: none;
+  }
+
+  .para {
+    margin-top: 10rem;
+  }
+}
   /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { 
   .header{
