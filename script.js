@@ -23,7 +23,14 @@ function showSidebar() {
     sidebar.style.display = "flex";
 }
 
-function hideSidebar() {
+// function hideSidebar() {
+//     const sidebar = document.querySelector('.sidebar');
+//     sidebar.style.display = "none";
+//     // event.preventDefault();
+// }
+
+function hideSidebar(event) {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = "none";
+    event.preventDefault(); // Prevent default behavior of the click event
 }
