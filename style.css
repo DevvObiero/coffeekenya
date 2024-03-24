@@ -38,6 +38,15 @@ li a {
 li a:hover {
   border-bottom: 2px solid #deab5f;
 }
+.sidebar a{
+  height: 50px;
+    padding: 0 30px;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    border-radius: 10px;
+}
 
 .header {
   background: url("https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
