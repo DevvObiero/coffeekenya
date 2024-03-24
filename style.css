@@ -21,6 +21,7 @@ button {
 
 body {
   background: #100e0f;
+  overflow-x: hidden;
 }
 
 
