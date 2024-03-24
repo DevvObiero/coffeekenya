@@ -23,14 +23,6 @@ body {
   background: #100e0f;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #fff;
-  font-family: sans-serif;
-  padding-top: 15px;
-}
 
 li {
   display: inline;
@@ -64,7 +56,7 @@ li a:hover {
   animation-iteration-count: var(--main-color);
   animation-duration: 2s;
   animation-timing-function: 1;
-
+  width: 100%;
 }
 .main-headings:hover{
 
@@ -432,5 +424,74 @@ text-align: center;
     word-spacing: 10px;
 text-align: center;
   /* hi-res laptops and desktops */ }
+
+}
+
+
+
+nav{
+  background-color: transparent;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+  
+}
+
+nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+
+
+
+
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color:rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+  z-index: 999;
+  box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+svg{
+  fill:bisque;
+}
+
+@media (max-width: 800px) {
+  .hideonMobile{
+      display: none;
+  }
+  .menu-button{
+      display: none;
+  }
+  
+}
+@media(max-width:400px) {
+  .sidebar{
+      width: 100%;
+  }
+  .menu-button{
+    display: flex;
+}
 
 }

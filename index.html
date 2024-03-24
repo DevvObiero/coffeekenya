@@ -12,12 +12,20 @@
   <body>
     <!-- nav -->
     <nav>
-      <h1 class="logo">Logo</h1>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li> <a href="#">Logo</a></li>
+        <li><a href="#" class="hideonMobile active">Home</a></li>
+        <li class="hideonMobile"><a href="#">About</a></li>
+        <li class="hideonMobile"><a href="#">Menu</a></li>
+        <li class="hideonMobile"><a href="#">Contact</a></li>
+        <li  class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
       </ul>
     </nav>
 
