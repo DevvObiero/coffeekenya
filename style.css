@@ -64,6 +64,7 @@ li a:hover {
   animation-iteration-count: var(--main-color);
   animation-duration: 2s;
   animation-timing-function: 1;
+
 }
 .main-headings:hover{
 
@@ -76,10 +77,8 @@ li a:hover {
 }
 .primary-headings:hover{
   position: absolute;
-  color:#deab5f;
+  color:rgb(184, 109, 11);
   transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
@@ -140,6 +139,16 @@ li a:hover {
   font-size: 4rem;
   color: #fff;
   transform: translateX(-100px);
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
 
 .line {
@@ -155,6 +164,9 @@ li a:hover {
   font-family: sans-serif;
   line-height: 20px;
   margin: 20px 0;
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
 }
 
 .coffee-container {
@@ -163,6 +175,9 @@ li a:hover {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10rem;
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
 }
 
 .content-section p {
@@ -209,6 +224,9 @@ li a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
 }
 
 .card {
