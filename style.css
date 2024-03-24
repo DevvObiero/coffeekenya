@@ -333,7 +333,8 @@ hr {
   }
 
   #our-story .title {
-    transform: translateX(50px);
+    transform: translateX(30px);
+    font-size:30px;
   }
 
   #our-story .line {
@@ -365,6 +366,7 @@ hr {
 
   .para {
     margin-top: 10rem;
+    display: none;
   }
 }
   /* smartphones, iPhone, portrait 480x320 phones */ }
@@ -384,11 +386,9 @@ hr {
     align-items: center;
     color: white;
    max-width: 100%;
-
-  
-  
    
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+   }
+ 
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
