@@ -334,8 +334,8 @@ hr {
   }
 
   #our-story .title {
-    transform: translateX(30px);
-    font-size:30px;
+    transform: translateX(35px);
+    font-size:40px;
   }
 
   #our-story .line {
@@ -368,6 +368,13 @@ hr {
   .para {
     margin-top: 10rem;
     display: none;
+  }
+  .img {
+    width: 70%;
+    height: 70%;
+    background: url("https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/pexels-chitokan-2183027-removebg-preview.png?raw=true");
+    background-position: center;
+    background-size: cover;
   }
 }
   /* smartphones, iPhone, portrait 480x320 phones */ }
