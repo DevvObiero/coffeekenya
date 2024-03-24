@@ -14,23 +14,23 @@
     <nav>
       <ul class="sidebar">
         <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Cards">Menu</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
       <ul>
         <li> <a href="#">Logo</a></li>
         <li><a href="#" class="hideonMobile active">Home</a></li>
-        <li class="hideonMobile"><a href="#">About</a></li>
-        <li class="hideonMobile"><a href="#">Menu</a></li>
-        <li class="hideonMobile"><a href="#">Contact</a></li>
+        <li class="hideonMobile"><a href="#About">About</a></li>
+        <li class="hideonMobile"><a href="#Cards">Menu</a></li>
+        <li class="hideonMobile"><a href="#Contact">Contact</a></li>
         <li  class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
       </ul>
     </nav>
 
     <!-- header -->
-    <section class="header">
+    <section id="Home" class="header">
       <h1 class="main-headings">START YOUR DAY</h1>
       <h1 class="primary-headings">WITH OUR COFFEE</h1>
       <button class="main-btn">Shop Now</button>
@@ -79,7 +79,7 @@
     <section class="products">
       <h1 class="title title-three">Products</h1>
 
-      <section class="cards box">
+      <section id="Cards" class="cards box">
         <div class="card">
           <div class="card-img img-one"></div>
           <div class="card-title">
@@ -126,7 +126,7 @@
     <hr />
     <footer>
       <div class="container">
-        <h1 class="heading-info">About <span>Us</span></h1>
+        <h1  id="About"class="heading-info">About <span>Us</span></h1>
         <p>
           Sit amet consectetur adipisicing elit. Dolor doloremque reiciendis ea
           voluptatibus.
