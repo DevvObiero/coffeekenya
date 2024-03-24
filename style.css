@@ -320,7 +320,7 @@ hr {
   color: white;
   font-family: sans-serif;
   text-align: center;
-  margin-top: 20px;
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -401,12 +401,12 @@ hr {
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { 
-  .para{
+  /* .para{
     position: absolute;
     display: flex;
     justify-content: end;
     top: 242rem;
-  }
+  } */
   .main-headings{
     position:absolute;
     top:7rem;
@@ -428,12 +428,12 @@ text-align: center;
   /* big landscape tablets, laptops, and desktops */ }
 }
 @media (min-width:1281px) { 
-  .para{
+  /* .para{
     position: absolute;
     display: flex;
     justify-content: end;
     top: 264rem;
-  }
+  } */
   .main-headings{
     position:absolute;
     top:7rem;
