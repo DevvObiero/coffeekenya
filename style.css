@@ -58,6 +58,7 @@ li a:hover {
     color: whitesmoke;
     align-items: center;
     border-radius: 10px;
+   
 }
 
 .header {
@@ -482,6 +483,7 @@ text-align: center;
     justify-content: end;
     top: 264rem;
   } */
+
   .main-headings{
     position:absolute;
     top:7rem;
@@ -549,6 +551,9 @@ svg{
   .menu-button{
       display: none;
   }
+  .sidebar{
+    width: 100%;
+}
   
 }
 @media(max-width:400px) {
