@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
+@font-face {
+  font-family: 'extraornamentalno2';
+  src: url('fonts/extraornamentalno2/ExtraOrnamentalNo2.ttf') format('truetype'); /* Adjust path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+nav{
+  background: var(--primary-color);
+  padding: 10px;
+}
+
 :root {
   --main-color: #deab5f;
   --primary-color: #312e2e;
@@ -47,6 +58,7 @@ li a:hover {
     color: whitesmoke;
     align-items: center;
     border-radius: 10px;
+   
 }
 
 .header {
@@ -91,6 +103,7 @@ li a:hover {
   font-size: 4rem;
   word-spacing: 10px;
   position: sticky;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -113,6 +126,16 @@ li a:hover {
   border: none;
   cursor: pointer;
   transform: translateY(60px);
+  border-radius: 10PX;
+}
+
+
+button{
+  border-radius: 10px;
+}
+button:hover{
+  background: #75543B;
+  color: bisque;
 }
 
 #our-story {
@@ -460,6 +483,7 @@ text-align: center;
     justify-content: end;
     top: 264rem;
   } */
+
   .main-headings{
     position:absolute;
     top:7rem;
@@ -527,6 +551,9 @@ svg{
   .menu-button{
       display: none;
   }
+  .sidebar{
+    width: 100%;
+}
   
 }
 @media(max-width:400px) {
