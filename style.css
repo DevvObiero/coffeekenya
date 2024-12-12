@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
-@font-face {
-  font-family: 'extraornamentalno2';
-  src: url('fonts/extraornamentalno2/ExtraOrnamentalNo2.ttf') format('truetype'); /* Adjust path as needed */
-  font-weight: normal;
-  font-style: normal;
-}
-nav{
-  background: var(--primary-color);
-  padding: 10px;
-}
-
 :root {
   --main-color: #deab5f;
   --primary-color: #312e2e;
@@ -22,6 +11,13 @@ button {
   background: var(--main-color);
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  /* color: antiquewhite; */
+}
+
+button:hover{
+  background: #733C02;
+  color: antiquewhite;
 }
 
 * {
@@ -50,15 +46,25 @@ li a {
 li a:hover {
   border-bottom: 2px solid #deab5f;
 }
+ .nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+border-radius: 30px;
+backdrop-filter: blur(5px);
+ }
+
 .sidebar a{
   height: 50px;
-    padding: 0 30px;
+    padding: 0 10px;
     display: flex;
     text-decoration: none;
     color: whitesmoke;
     align-items: center;
-    border-radius: 10px;
-   
+    border-radius: 1px;
 }
 
 .header {
@@ -103,7 +109,6 @@ li a:hover {
   font-size: 4rem;
   word-spacing: 10px;
   position: sticky;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -126,16 +131,6 @@ li a:hover {
   border: none;
   cursor: pointer;
   transform: translateY(60px);
-  border-radius: 10PX;
-}
-
-
-button{
-  border-radius: 10px;
-}
-button:hover{
-  background: #75543B;
-  color: bisque;
 }
 
 #our-story {
@@ -483,7 +478,6 @@ text-align: center;
     justify-content: end;
     top: 264rem;
   } */
-
   .main-headings{
     position:absolute;
     top:7rem;
@@ -495,27 +489,27 @@ text-align: center;
 }
 
 
-
 nav{
   background-color: transparent;
   box-shadow:3px 3px 3px rgba(0,0,0,0.1);
-  
+ font-family:  "Poppins", serif;
 }
 
 nav ul{
   width: 100%;
   display: flex;
   list-style: none;
+ font-family:  "Poppins", serif;
   align-items: center;
+  font-weight: 200;
 }
-
-
 
 
 
 nav li:first-child{
   margin-right: auto;
 }
+
 .sidebar{
   position: fixed;
   top: 0;
@@ -531,6 +525,7 @@ nav li:first-child{
   flex-direction: column;
   align-items: flex-start;
   justify-content:flex-start;
+
 }
 
 .sidebar li{
@@ -551,9 +546,6 @@ svg{
   .menu-button{
       display: none;
   }
-  .sidebar{
-    width: 100%;
-}
   
 }
 @media(max-width:400px) {
