@@ -486,14 +486,16 @@ text-align: center;
 nav{
   background-color: transparent;
   box-shadow:3px 3px 3px rgba(0,0,0,0.1);
-  
+ font-family:  "Poppins", serif;
 }
 
 nav ul{
   width: 100%;
   display: flex;
   list-style: none;
+ font-family:  "Poppins", serif;
   align-items: center;
+  font-weight: 200;
 }
 
 
@@ -518,6 +520,7 @@ nav li:first-child{
   flex-direction: column;
   align-items: flex-start;
   justify-content:flex-start;
+
 }
 
 .sidebar li{
