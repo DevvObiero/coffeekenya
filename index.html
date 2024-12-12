@@ -4,31 +4,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- nav -->
     <nav>
       <ul class="sidebar">
-        <li onclick="hideSidebar(event)"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li onclick="hideSidebar(event)">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Cards">Menu</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
-      <ul>
-        <li> <a href="#">Logo</a></li>
+      <ul class="nav-bar">
+        <li><a href="#">Logo</a></li>
         <li><a href="#" class="hideonMobile active">Home</a></li>
         <li class="hideonMobile"><a href="#About">About</a></li>
         <li class="hideonMobile"><a href="#Cards">Menu</a></li>
         <li class="hideonMobile"><a href="#Contact">Contact</a></li>
-        <li  class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
-
     <!-- header -->
     <section id="Home" class="header">
       <h1 class="main-headings">START YOUR DAY</h1>
@@ -70,8 +96,13 @@
         <button style="margin-top: 20px">Learn More</button>
       </div>
 
-      <section class="img-container box ">
-        <img class="picha" src="https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/3.png?raw=true" class="img-2" alt="" />
+      <section class="img-container box">
+        <img
+          class="picha"
+          src="https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/3.png?raw=true"
+          class="img-2"
+          alt=""
+        />
       </section>
     </section>
 
@@ -79,7 +110,7 @@
     <section class="products">
       <h1 class="title title-three">Products</h1>
 
-      <section  class="cards box">
+      <section class="cards box">
         <div class="card">
           <div class="card-img img-one"></div>
           <div class="card-title">
@@ -102,7 +133,7 @@
             <p>Espresso</p>
             <p>Chocolate</p>
             <p>Steamed Milk</p>
-            <p> sh100</p>
+            <p>sh100</p>
           </div>
           <button>Learn More</button>
         </div>
@@ -125,31 +156,31 @@
     <!-- footer -->
     <hr />
     <footer>
-      <div  id="Cards" class="container">
-        <h1   class="heading-info">About <span>Us</span></h1>
+      <div id="Cards" class="container">
+        <h1 class="heading-info">About <span>Us</span></h1>
         <p>
           Sit amet consectetur adipisicing elit. Dolor doloremque reiciendis ea
           voluptatibus.
         </p>
       </div>
       <div id="Contact" class="container">
-        <h1  class="heading-info">Contact <span>Us</span></h1>
+        <h1 class="heading-info">Contact <span>Us</span></h1>
         <p>
           Sit amet consectetur adipisicing elit. Dolor doloremque reiciendis ea
           voluptatibus.
         </p>
       </div>
-      <div  id="About"  class="container">
-        <h1  class="heading-info">Opening <span> Hours</span></h1>
+      <div id="About" class="container">
+        <h1 class="heading-info">Opening <span> Hours</span></h1>
         <p>
           Sit amet consectetur adipisicing elit. Dolor doloremque reiciendis ea
           voluptatibus.
         </p>
       </div>
     </footer>
-    <hr  class="hr-two" />
+    <hr class="hr-two" />
 
-    <p id="about"  class="para">
+    <p id="about" class="para">
       Copyright @ 2024 Paul Obiero WebDev|provided by <span>Paul Obiero</span>
     </p>
 
@@ -172,7 +203,7 @@
 </head>
 <body>
     navigation bar -->
-    <!-- <nav>
+<!-- <nav>
         <h1 class="logo">Logo</h1>
         <ul>
             <li><a href="">Home</a></li>
@@ -219,7 +250,8 @@ Coffee
 </div>
 <Section class="img-container">
     <img src="https://github.com/HuXn-WebDev/HTML-CSS-JavaScript-100-Projects/blob/main/92.%20Coffee/Images/2.png?raw=true"  alt="picture of tasty cup of cofee" class="img-2"> 
-</Section> --> -->
+</Section> -->
+-->
 <!-- </section> -->
 <!-- -----products---- -->
 <!-- <section class="products">

@@ -39,14 +39,25 @@ li a {
 li a:hover {
   border-bottom: 2px solid #deab5f;
 }
+ .nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+border-radius: 30px;
+backdrop-filter: blur(5px);
+ }
+
 .sidebar a{
   height: 50px;
-    padding: 0 30px;
+    padding: 0 10px;
     display: flex;
     text-decoration: none;
     color: whitesmoke;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 .header {
