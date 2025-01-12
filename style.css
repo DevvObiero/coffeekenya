@@ -97,6 +97,20 @@ backdrop-filter: blur(5px);
   animation-timing-function: 1;
   width: 100%;
 }
+
+/* breathing effect */
+@keyframes breathe {
+  0% {
+    transform: translateY(0); /* Start at the normal position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up a bit */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+/* breathing effect */
 .main-headings:hover{
 
   color:rgb(184, 109, 11);
@@ -121,6 +135,7 @@ backdrop-filter: blur(5px);
   word-spacing: 10px;
   position: sticky;
   font-family: 'Times New Roman', Times, serif;
+  animation: breathe 5s ease-in-out infinite;
 }
 
 
@@ -526,6 +541,16 @@ text-align: center;
     word-spacing: 10px;
 text-align: center;
   /* hi-res laptops and desktops */ }
+  
+.primary-headings {
+  position: absolute;
+  bottom: 25rem;
+  /* top:5rem; */
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+  
+}
 
 }
 
