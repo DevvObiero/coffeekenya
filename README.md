@@ -1,5 +1,5 @@
-https://coffeekenyann.netlify.app
 
+](https://cafe-serene.netlify.app)
 ```markdown
 # **Café Serene**
 
