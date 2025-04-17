@@ -25,4 +25,4 @@ To get started with this project locally:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/DevObiero/imaginary-cafe-website.git
+   git clone https://github.com/Biden254/coffeekenya
